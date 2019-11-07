@@ -1,0 +1,61 @@
+body {
+    background-color:goldenrod;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+  }
+  
+.label {
+    font-weight: bold;
+  }
+  
+.create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+.form-group {
+    margin-bottom: 5px;
+  }
+
+.burger-title {
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 200%;
+}
+#burger-cont { 
+    border-width: 1%;
+    border-style: solid ;
+    border-color: #87d8cb;
+
+}
+/* #devoured-burgers {
+    background-image: url(../img/burger-negative.jpg);
+} */
+
+#diana {
+   font-family: 'Fredericka the Great', cursive;
+   text-align: center;
+}
+
+h2 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 150%;
+}
+#add-me {
+    font-family: 'Rock Salt', cursive;
+    font-size: 150%;
+}
+
+.burger {
+    font-weight: bold;
+}
+#burger-jumbo {
+    background-image: url(../img/burger.jpeg);
+}
+#add-jumbo {
+    background-color: #87d8cb;
+}

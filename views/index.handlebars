@@ -1,0 +1,75 @@
+<div class="jumbotron" id="burger-jumbo">
+    <h1 class="display-4" id="diana"> Diana's Burgers!</h1>
+
+    <hr class="my-4">
+    
+
+</div>
+
+<div class="menu-container">
+    <h3 class="burger-title">MENU</h3>
+    <hr class="my-6">
+</div>
+
+
+<div class="row" id="burger-cont">
+
+    <div class="col-4">
+        <h2>Burgers Devoured!</h2>
+        <ul class="devoured-list">
+            {{#each burgers}}
+
+            {{#unless devoured}}</p>
+            {{> burger/burger-block devoured=true}}
+            {{/unless}}
+
+            {{/each}}
+            
+        </ul>
+
+    </div>
+    <div class="col-2" id="devoured-burgers">
+        <img src="/assets/img/burger-negative.jpg" style="height: 100%; width:100%">
+    </div>
+
+    <div class="col-4">
+        <h2>Burgers Available!</h2>
+        <ul class="devoured-list">
+            {{#each burgers}}
+
+            {{#if devoured}}
+            {{> burger/burger-block devoured=false}}
+            {{/if}}
+
+            {{/each}}
+            
+        </ul>
+
+    </div>
+    <div class="col-2" id="available-burgers">
+        <img src="/assets/img/burger-available.jpg" style="height: 100%; width:100%">
+    </div>
+
+</div>
+
+<div class="jumbotron" id="add-jumbo">
+    <h1 class="display-4" id="add-me">Add a Burger!</h1>
+    <hr class="my-4">
+
+    <form class="create-form">
+
+        <div class="form-group">
+            <label for="burg">Burger Name:</label>
+            <input type="text" id="burg" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="devoured">Still available?</label><br>
+            <input type="radio" name="devoured" value="1" checked>Available!<br>
+            <input type="radio" name="devoured" value="0"> Not Available!
+        </div>
+
+        <button class="btn btn-primary btm-lg" type="submit">Add Burger</button>
+    </form>
+
+</div>
