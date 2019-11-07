@@ -2,6 +2,10 @@ body {
     background-color:goldenrod;
 }
 
+.container {
+    background-color: ivory;
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -32,9 +36,6 @@ li {
     border-color: #87d8cb;
 
 }
-/* #devoured-burgers {
-    background-image: url(../img/burger-negative.jpg);
-} */
 
 #diana {
    font-family: 'Fredericka the Great', cursive;
@@ -48,6 +49,7 @@ h2 {
 #add-me {
     font-family: 'Rock Salt', cursive;
     font-size: 150%;
+    text-align: center;
 }
 
 .burger {
@@ -55,7 +57,12 @@ h2 {
 }
 #burger-jumbo {
     background-image: url(../img/burger.jpeg);
+    
 }
 #add-jumbo {
     background-color: #87d8cb;
+}
+
+.create-form {
+    text-align: center;
 }
